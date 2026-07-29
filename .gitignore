@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment variables (SECRETS - never commit these)
+.env
+.env.local
+
+# Build outputs
+dist/
+build/
+
+# Editor/OS files
+.vscode/
+.DS_Store
+
+# Python virtual environment
+venv/
+.venv/
+
+# Logs
+*.log
