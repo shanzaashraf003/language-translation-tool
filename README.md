@@ -12,18 +12,18 @@ A full-stack language translation tool built with React, TypeScript, and FastAPI
 
 ## Overview
 
-This project demonstrates a complete, production-style implementation of a translation service: a typed React frontend communicating with a FastAPI backend, which itself proxies requests to the [MyMemory Translation API](https://mymemory.translated.net/). It was built as a structured, phase-by-phase engineering exercise — covering planning, clean architecture, API integration, accessibility, and documentation, in that order, the way a real feature would be built on a professional team.
+This project demonstrates a complete, production-style implementation of a translation service: a typed React frontend communicating with a FastAPI backend, which itself proxies requests to the [MyMemory Translation API](https://mymemory.translated.net/). It was built as a structured, phase-by-phase engineering exercise  covering planning, clean architecture, API integration, accessibility, and documentation, in that order, the way a real feature would be built on a professional team.
 
 ## Features
 
 - **Text translation** between 12+ languages, with auto-detect support
-- **Language swap** — instantly flip source/target with a single click
+- **Language swap** - instantly flip source/target with a single click
 - **Copy to clipboard** with visual confirmation
-- **Loading and error states** — graceful handling of network failures, invalid input, and provider errors
-- **Input validation** — character limits, blank-text prevention, same-language detection
+- **Loading and error states** - graceful handling of network failures, invalid input, and provider errors
+- **Input validation** - character limits, blank-text prevention, same-language detection
 - **Keyboard shortcut** (`Cmd/Ctrl + Enter`) to translate without leaving the keyboard
-- **Accessible by design** — `aria-live` announcements, visible focus states, `prefers-reduced-motion` support
-- **Fully responsive** — usable from mobile to desktop
+- **Accessible by design** - `aria-live` announcements, visible focus states, `prefers-reduced-motion` support
+- **Fully responsive** - usable from mobile to desktop
 - **Auto-generated API docs** via FastAPI's Swagger UI
 
 ## Architecture
@@ -123,10 +123,10 @@ VITE_API_BASE_URL=http://localhost:8000
 Two terminals, from the project root:
 
 ```bash
-# Terminal 1 — backend
+# Terminal 1 - backend
 cd backend && source venv/bin/activate && uvicorn app.main:app --reload --port 8000
 
-# Terminal 2 — frontend
+# Terminal 2 - frontend
 cd frontend && npm run dev
 ```
 
@@ -167,7 +167,7 @@ Once the backend is running, interactive API docs are available at:
 
 ### `GET /health`
 
-Returns `{"status": "ok", "environment": "development"}` — used to verify the API is running.
+Returns `{"status": "ok", "environment": "development"}` - used to verify the API is running.
 
 ## Screenshots
 
@@ -194,4 +194,4 @@ Computer Science student and aspiring AI Engineer with interests in Machine Lear
 
 ## License
 
-MIT — see [LICENSE](LICENSE) for details.
+MIT - see [LICENSE](LICENSE) for details.
