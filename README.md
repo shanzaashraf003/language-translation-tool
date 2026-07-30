@@ -1,6 +1,12 @@
 # Language Translator
 
-A full-stack language translation tool built with React, TypeScript, and FastAPI. Enter text, pick a source and target language, and get an instant translation — with a clean, accessible, responsive UI.
+A full-stack language translation tool built with React, TypeScript, and FastAPI. Enter text, pick a source and target language, and get an instant translation  with a clean, accessible, responsive UI.
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.141-green)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ![Main UI](screenshots/main-ui.png)
 
