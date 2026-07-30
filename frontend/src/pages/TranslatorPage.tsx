@@ -22,9 +22,6 @@ export function TranslatorPage() {
     translate({ text: sourceText, source_lang: sourceLang, target_lang: targetLang });
   };
 
-  // Cmd+Enter (Mac) or Ctrl+Enter (Windows/Linux) is the conventional
-  // shortcut for "submit" in a multi-line text field, since plain Enter
-  // needs to still insert a newline.
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if ((e.metaKey || e.ctrlKey) && e.key === "Enter") {
       e.preventDefault();
@@ -33,7 +30,7 @@ export function TranslatorPage() {
   };
 
   const handleSwap = () => {
-    if (sourceLang === "auto") return; // can't swap TO "auto detect"
+    if (sourceLang === "auto") return;
     setSourceLang(targetLang);
     setTargetLang(sourceLang);
     setSourceText(translatedText);
@@ -70,7 +67,6 @@ export function TranslatorPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {/* Source panel */}
           <div className="bg-[#161922] border border-[#2A2E38] rounded-xl p-4 flex flex-col">
             <textarea
               value={sourceText}
@@ -96,7 +92,6 @@ export function TranslatorPage() {
             </div>
           </div>
 
-          {/* Result panel */}
           <div className="bg-[#161922] border border-[#2A2E38] rounded-xl p-4 flex flex-col">
             <div className="flex-1 text-sm" aria-live="polite" aria-atomic="true">
               {isLoading ? (
